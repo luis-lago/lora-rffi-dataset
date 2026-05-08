@@ -1,0 +1,8 @@
+numpy
+scipy
+matplotlib
+torch
+h5py
+scikit-learn
+pyserial
+PyQt5
