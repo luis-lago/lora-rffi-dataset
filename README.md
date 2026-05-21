@@ -24,8 +24,6 @@ Ensure the SDR and LoRa HAT are connected via a USB port of the computer and con
 
 A curated sample of the dataset can be found at [OneDrive](https://fiudit-my.sharepoint.com/:u:/r/personal/llago016_fiu_edu/Documents/AIoT-Lab/dataset_npy.zip?csf=1&web=1&e=gWrtlf)
 
-![Signal Visualization](images/visualization.png)
-
 ## Example
 
 The following steps illustrate a typical workflow:
