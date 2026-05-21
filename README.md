@@ -1,18 +1,18 @@
-LoRa RF Fingerprinting: Capture & Dataset Pipeline
+# LoRa RF Fingerprinting: Capture & Dataset Pipeline
 
 This repository contains the pipeline for capturing raw LoRa IQ signals via SDR, extracting the complex preambles, and formatting the data. 
 
-Prerequisites & Environment Setup
+## Prerequisites & Environment Setup
 
-1. GNU Radio (Radioconda)
+### 1. GNU Radio (Radioconda)
 
 For MacOS, we use Radioconda to manage the GNU Radio environment and necessary SDR drivers. Follow the installation and configuration guide at the official repository: https://github.com/radioconda/radioconda-installer
 
-2. Python Dependencies
+### 2. Python Dependencies
 
 Once your radioconda environment is installed, you must install the Python dependencies into that same environment and specified in requirements.txt
 
-Execution Pipeline
+## Execution Pipeline
 
 Ensure the SDR and LoRa HAT are connected via a USB port of the computer and configured. If the LoRa HAT has not been previosuly configured, set the device in configuration mode and use config_lora.py Python script for HAT configuration. Run the following scripts in the exact order listed below to record and process a single session:
 1. In a terminal, run transmit_loop.py
@@ -20,17 +20,17 @@ Ensure the SDR and LoRa HAT are connected via a USB port of the computer and con
 3. Verify the capture and preamble extraction.
 4. Repeat the procedure for different LoRa HAT devices and sessions per device.
 
-Dataset
+## Dataset
 
 A curated sample of the dataset can be found at [OneDrive](https://fiudit-my.sharepoint.com/:u:/r/personal/llago016_fiu_edu/Documents/AIoT-Lab/dataset_npy.zip?csf=1&web=1&e=gWrtlf)
 
 ![Signal Visualization](images/visualization.png)
 
-Example
+## Example
 
 The following steps illustrate a typical workflow:
 
-Hardware:
+### Hardware
 
 1. Unbox the LoRa HAT and the USRP SDR.
 
