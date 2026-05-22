@@ -27,7 +27,7 @@ Open GNU Radio Companion (GRC) and create a new flowgraph. You will need to add 
 ```
 **Step-by-Step Blocks Configuration:**
 
-1. **Parameter Blocks:** Add four **Parameter Blocks**--one for each parameter sample rate, gain, I/Q data storage, and capture time-- Double-click each block and ensure the attribute **ID** is set to the corresponding ID (`samp_rate`, `gain`, `filepath`, and `capture_time`) while the correct data type and value is correctly set in each case. For instance, the default `samp_rate` parameter value is set to 1e6 (1 MHz), type `Float`, and `Value` to 60 for 60 seconds default capturing duration.  
+1. **Parameter Blocks:** Add four **Parameter Blocks**--one for each parameter sample rate, gain, I/Q data storage, and capture time-- Double-click each block and ensure the attribute **ID** is set to the corresponding ID (`samp_rate`, `gain`, `filepath`, and `capture_time`) while the correct data type and value is correctly set in each case. For instance, the default `samp_rate` parameter value is set to 1e6 (1 MHz), `Type` is `Float`, and `Value` is set to 60 for 60 seconds of continuous RF signal capture.  
 2. **UHD: USRP Source:** Add this block to interface with your SDR.  
    * Center Freq: 915e6 (915 MHz)  
    * Sample Rate: `samp_rate`  
@@ -49,7 +49,7 @@ Open GNU Radio Companion (GRC) and create a new flowgraph. You will need to add 
 Once the flowgraph is complete, we need to convert it into a usable Python script.
 
 1. **Generate the Code:** In GRC, click **Build → Generate** in the top menu. This creates a Python file in your directory.  
-2. **The Generated Class:** GRC wraps your flowgraph in a Python class (e.g., lora\_receiver). The constructor of this class will accept any parameters you defined, such as `samp_rate`, `gain`, `capture_duration`, and `filepath`.  
+2. **The Generated Class:** GRC wraps your flowgraph in a Python class (e.g., lora\_receiver). The constructor of this class will accept any parameters you defined, such as `samp_rate`, `gain`, `capture_time`, and `filepath`.  
 3. **Running from a Script:** You can now import and trigger this flowgraph from your own custom Python scripts:  
    ```
    from lora_receiver import lora_receiver
