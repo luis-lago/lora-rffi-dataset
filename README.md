@@ -1,6 +1,8 @@
 # LoRa RF Fingerprinting: Capture & Dataset Pipeline
 
-This repository contains the pipeline for capturing raw LoRa IQ signals via SDR, extracting the complex preambles, and formatting the data. 
+This repository contains the pipeline for capturing raw LoRa IQ signals via SDR, extracting the complex preambles, and formatting the data.
+
+For hardware assembly and setup instructions, see [Building the LoRa IQ Capture Setup](Building_LoRa_IQ_Capture_Setup.md).
 
 ## Prerequisites & Environment Setup
 
